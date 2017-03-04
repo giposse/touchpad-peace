@@ -1,0 +1,22 @@
+Normally, a setup program would take care of this, but since this is a github
+project now, I rudimentaryly explain how to have TouchpadPeace start automatically
+when you log in.
+
+Open your registry editor (regedt32.exe or regedit.exe) and create a new string value in key
+
+HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Windows/CurrentVersion/Run
+
+Name:  TouchpadPeace
+Type:  REG_SZ
+Value: c:\folder\whereverTouchPadPeace\Lives\In\Your\Machine\TouchpadPeace.exe
+
+
+The Value string should be the full path of the touchpad peace exe file.
+
+There are multiple ways to start a program automatically after you log in to your account.   This is just one of them.
+You can use any other way you like to auto-start TouchpadPeace.
+
+Other possible key values may be
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run
+
+Enjoy!
